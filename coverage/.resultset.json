@@ -1,6 +1,47 @@
 {
   "RSpec": {
     "coverage": {
+      "/data/workspace/ce_blog/instance_store/spec/instance_store/error_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          6,
+          null,
+          3,
+          6,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/data/workspace/ce_blog/instance_store/spec/instance_store/instantiator_spec.rb": {
         "lines": [
           null,
@@ -45,9 +86,6 @@
           1,
           1,
           2,
-          null,
-          null,
-          null,
           null,
           null,
           null,
@@ -126,15 +164,9 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
           1,
           1,
           2,
-          null,
-          null,
-          null,
           null,
           null,
           null,
@@ -192,6 +224,6 @@
         ]
       }
     },
-    "timestamp": 1601208721
+    "timestamp": 1601215365
   }
 }
