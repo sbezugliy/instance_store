@@ -3,9 +3,9 @@
 require 'spec_helper'
 
 RSpec.describe InstanceStore do
-  shared_examples 'raises error' do |error_class, message, args|
-    subject { raise described_class, *args }
+  subject { raise(described_class.new(*args)) }
 
+  shared_examples 'raises error' do |error_class, message|
     it do
       expect { subject }.to raise_error(
         error_class,
@@ -15,23 +15,26 @@ RSpec.describe InstanceStore do
   end
 
   describe described_class::NoModuleError do
+    let(:args) { %i[model] }
+
     include_examples 'raises error',
-                     described_class,
-                     'Module `Model` is undefined',
-                     [:model]
+                     InstanceStore::NoModuleError,
+                     'Module `Model` is undefined'
   end
 
-  describe described_class::NoClassError do
+  context described_class::NoClassError do
+    let(:args) {%i[model test_a]}
+
     include_examples 'raises error',
-                     described_class,
-                     'Module Model::TestA is undefined',
-                     [:model, :test_a]
+                     InstanceStore::NoClassError,
+                     'Class `Model::TestA` is undefined'
   end
 
   describe described_class::NilAliasNameError do
+    let(:args) {%i[model test_a]}
+
     include_examples 'raises error',
-                     described_class,
-                     'Alias name is nil for cloned `Model::TestA`.',
-                     [:model, :test_a]
+                     InstanceStore::NilAliasNameError,
+                     'Alias name is nil for cloned `Model::TestA`.'
   end
 end
