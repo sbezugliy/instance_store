@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'instantiator'
+require 'instance_store'
 
 require 'pry'
 Pry.start(__FILE__)
