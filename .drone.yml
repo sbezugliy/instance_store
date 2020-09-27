@@ -21,6 +21,23 @@ steps:
         path: /usr/local/bundle
     commands:
       - rake
+  - name: build_gem
+    image: ruby
+    environment:
+      RUBYGEMS_KEY:
+        from_secret: RUBYGEMS_KEY
+    volumes:
+      - name: bundle
+        path: /usr/local/bundle
+    commands:
+      - gem signin --code $RUBYGEMS_KEY
+      - gem build instance_store.gemspec
+      - gem push instance_store-*.gem
+    when:
+      branch:
+      - release
+      event:
+        pull_request: merged
 
 volumes:
   - name: bundle
