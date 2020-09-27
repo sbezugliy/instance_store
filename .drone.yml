@@ -20,7 +20,7 @@ steps:
       - name: bundle
         path: /usr/local/bundle
     commands:
-      - rspec
+      - rake
 
 volumes:
   - name: bundle
