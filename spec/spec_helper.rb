@@ -17,6 +17,7 @@ RSpec.configure do |config|
 end
 
 if ENV['CI'] == 'true'
+  require 'codecov'
   require 'instance_store'
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
 else

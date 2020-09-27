@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/data/workspace/ce_blog/instance_store/spec/instance_store/error_spec.rb": {
+      "/opt/app/spec/instance_store/error_spec.rb": {
         "lines": [
           null,
           null,
@@ -45,7 +45,7 @@
           null
         ]
       },
-      "/data/workspace/ce_blog/instance_store/spec/instance_store/instantiator_spec.rb": {
+      "/opt/app/spec/instance_store/instantiator_spec.rb": {
         "lines": [
           null,
           null,
@@ -176,7 +176,7 @@
           null
         ]
       },
-      "/data/workspace/ce_blog/instance_store/spec/support/mock/test_a.rb": {
+      "/opt/app/spec/support/mock/test_a.rb": {
         "lines": [
           null,
           null,
@@ -201,7 +201,7 @@
           null
         ]
       },
-      "/data/workspace/ce_blog/instance_store/spec/support/mock/test_b.rb": {
+      "/opt/app/spec/support/mock/test_b.rb": {
         "lines": [
           null,
           null,
@@ -227,6 +227,6 @@
         ]
       }
     },
-    "timestamp": 1601217247
+    "timestamp": 1601217510
   }
 }
