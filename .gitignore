@@ -1,4 +1,4 @@
-#*.gem
-#../bak/coverage/
-#../bak/.ruby-version
-#../bak/.ruby-gemset
+*.gem
+../bak/coverage/
+../bak/.ruby-version
+../bak/.ruby-gemset
