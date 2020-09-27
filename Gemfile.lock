@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    instance_store (0.0.1.alpha0)
+    instance_store (0.0.1.alpha1)
       guard (~> 2.16)
       rake (~> 12.3)
 
