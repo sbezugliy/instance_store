@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/opt/app/spec/instance_store/instantiator_spec.rb": {
+      "/data/workspace/ce_blog/instance_store/spec/instance_store/instantiator_spec.rb": {
         "lines": [
           null,
           null,
@@ -25,6 +25,7 @@
           null,
           null,
           null,
+          null,
           1,
           null,
           null,
@@ -44,6 +45,9 @@
           1,
           1,
           2,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -90,23 +94,34 @@
           null,
           null,
           null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           1,
           1,
+          1,
           null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          2,
           null,
           null,
           null,
@@ -120,17 +135,13 @@
           null,
           null,
           null,
-          null,
-          1,
-          1,
-          2,
           null,
           null,
           null,
           null
         ]
       },
-      "/opt/app/spec/support/mock/test_a.rb": {
+      "/data/workspace/ce_blog/instance_store/spec/support/mock/test_a.rb": {
         "lines": [
           null,
           null,
@@ -155,7 +166,7 @@
           null
         ]
       },
-      "/opt/app/spec/support/mock/test_b.rb": {
+      "/data/workspace/ce_blog/instance_store/spec/support/mock/test_b.rb": {
         "lines": [
           null,
           null,
@@ -181,6 +192,6 @@
         ]
       }
     },
-    "timestamp": 1601207764
+    "timestamp": 1601208721
   }
 }

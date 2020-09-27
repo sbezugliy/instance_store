@@ -5,4 +5,7 @@ require 'core_ext/string'
 require 'core_ext/symbol'
 
 require 'instance_store/error'
-require 'instance_store/instance_store'
+require 'instance_store/instantiator'
+
+# Instance store module
+module InstanceStore; end
