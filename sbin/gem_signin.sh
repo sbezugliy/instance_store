@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-gem signin
+mkdir -p ~/.gem
 echo "---
 :rubygems_api_key: ${RUBYGEMS_KEY}
-" > ~/.gem/ credentials
+" > ~/.gem/credentials
+gem signin
