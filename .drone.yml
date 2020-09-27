@@ -34,10 +34,8 @@ steps:
       - gem build
       - sh ./sbin/gem_push.sh
     when:
-      branch:
-      - release
-      event:
-        pull_request: merged
+      branch: release
+      event: push
 
 volumes:
   - name: bundle
