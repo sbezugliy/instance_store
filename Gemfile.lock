@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     instance_store (0.0.1.alpha0)
-      guard
-      rake
+      guard (~> 2.16)
+      rake (~> 12.3)
 
 GEM
   remote: https://rubygems.org/
@@ -110,20 +110,20 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  codecov
-  fabrication
-  faker
-  guard-rspec
-  guard-rubocop
+  codecov (~> 0.2)
+  fabrication (~> 2.21)
+  faker (~> 2.14)
+  guard-rspec (~> 4.7)
+  guard-rubocop (~> 1.3)
   instance_store!
   minitest (~> 5.0)
-  pry
+  pry (~> 0.13)
   rake (~> 12.0)
-  rspec
-  rubocop
-  rubocop-rspec
-  simplecov
-  simplecov-console
+  rspec (~> 3.9)
+  rubocop (~> 0.92)
+  rubocop-rspec (~> 1.43)
+  simplecov (~> 0.19)
+  simplecov-console (~> 0.7)
 
 BUNDLED WITH
    2.1.4

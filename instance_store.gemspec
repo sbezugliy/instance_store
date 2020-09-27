@@ -29,18 +29,18 @@ for preinitialization and managemant, cloning and duplication of objects. WIP, d
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = %w[lib]
 
-  spec.add_runtime_dependency 'guard'
-  spec.add_runtime_dependency 'rake'
+  spec.add_runtime_dependency 'guard', '~> 2.16'
+  spec.add_runtime_dependency 'rake', '~> 12.3'
 
-  spec.add_development_dependency 'codecov'
-  spec.add_development_dependency 'fabrication'
-  spec.add_development_dependency 'faker'
-  spec.add_development_dependency 'guard-rspec'
-  spec.add_development_dependency 'guard-rubocop'
-  spec.add_development_dependency 'pry'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'rubocop-rspec'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'simplecov-console'
+  spec.add_development_dependency 'codecov', '~> 0.2'
+  spec.add_development_dependency 'fabrication', '~> 2.21'
+  spec.add_development_dependency 'faker', '~> 2.14'
+  spec.add_development_dependency 'guard-rspec', '~> 4.7'
+  spec.add_development_dependency 'guard-rubocop', '~> 1.3'
+  spec.add_development_dependency 'pry', '~> 0.13'
+  spec.add_development_dependency 'rspec', '~> 3.9'
+  spec.add_development_dependency 'rubocop', '~> 0.92'
+  spec.add_development_dependency 'rubocop-rspec', '~> 1.43'
+  spec.add_development_dependency 'simplecov', '~> 0.19'
+  spec.add_development_dependency 'simplecov-console', '~> 0.7'
 end
