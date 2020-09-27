@@ -32,7 +32,7 @@ steps:
     commands:
       - gem signin --code $RUBYGEMS_KEY
       - gem build instance_store.gemspec
-      - gem push
+      - gem push instance_store-*.gem
     when:
       branch:
       - release
