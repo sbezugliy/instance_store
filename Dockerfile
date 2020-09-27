@@ -3,9 +3,9 @@ FROM ruby:2.7.1
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
 
-COPY ./lib/instantiator/version.rb ./lib/instantiator/
+COPY ./lib/instance_store/version.rb ./lib/instance_store/
 COPY ./Gemfile ./
-COPY ./instantiator.gemspec ./
+COPY instance_store.gemspec ./
 COPY ./Gemfile.lock ./
 
 RUN bundle check || bundle install

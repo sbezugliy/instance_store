@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Instantiator and loader
-class Instantiator
+class InstanceStore
   attr_reader :types
   attr_accessor :i
 

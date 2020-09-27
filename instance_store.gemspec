@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative 'lib/instantiator/version'
+require_relative 'lib/instance_store/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'instantiator'
-  spec.version       = Instantiator::VERSION
+  spec.name          = 'instance_store'
+  spec.version       = InstanceStore::VERSION
   spec.authors       = ['Sergey']
   spec.email         = ['s.bezugliy@codenv.top']
 
@@ -15,7 +15,7 @@ for preinitialization and managemant, cloning and duplication of objects. WIP, d
   spec.homepage      = 'https://codenv.top'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
-  spec.metadata['allowed_push_host'] = 'https://bitbucket.org'
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com'
@@ -32,6 +32,7 @@ for preinitialization and managemant, cloning and duplication of objects. WIP, d
   spec.add_runtime_dependency 'guard'
   spec.add_runtime_dependency 'rake'
 
+  spec.add_development_dependency 'codecov'
   spec.add_development_dependency 'fabrication'
   spec.add_development_dependency 'faker'
   spec.add_development_dependency 'guard-rspec'
@@ -40,4 +41,6 @@ for preinitialization and managemant, cloning and duplication of objects. WIP, d
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'rubocop-rspec'
+  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'simplecov-console'
 end

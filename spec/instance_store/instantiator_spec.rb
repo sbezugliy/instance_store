@@ -4,7 +4,7 @@ require 'spec_helper'
 require_relative '../support/mock/test_a'
 require_relative '../support/mock/test_b'
 
-RSpec.describe Instantiator do
+RSpec.describe InstanceStore do
   subject(:wm) { described_class.new(%i[model serializer]) }
 
   describe 'when classes exists' do
