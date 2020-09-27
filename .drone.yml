@@ -30,14 +30,12 @@ steps:
       - name: bundle
         path: /usr/local/bundle
     commands:
-      - gem signin --code $RUBYGEMS_KEY
-      - gem build instance_store.gemspec
-      - gem push instance_store-*.gem
+      - sh ./sbin/gem_signin.sh
+      - gem build
+      - sh ./sbin/gem_push.sh
     when:
-      branch:
-      - release
-      event:
-        pull_request: merged
+      branch: release
+      event: push
 
 volumes:
   - name: bundle
