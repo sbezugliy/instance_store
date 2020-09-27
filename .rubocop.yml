@@ -1,0 +1,29 @@
+require:
+  - rubocop-rspec
+AllCops:
+  NewCops: enable
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - ./*.gemspec
+    - app/**/*.rb
+    - spec/**/*_spec.rb
+
+RSpec/NestedGroups:
+  Enabled: true
+  Exclude:
+    - spec/**/*_spec.rb
+
+Metrics/MethodLength:
+  Enabled: true
+  Exclude:
+    - config/*.rb
+
+RSpec/ExampleLength:
+  Enabled: true
+  Max: 20
+
+RSpec/MultipleExpectations:
+  Enabled: true
+  Max: 5

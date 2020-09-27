@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  instantiator_test:
+    image: instantiator:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: /opt/app/sbin/entrypoint.sh
+    volumes:
+      - ./:/opt/app/
+    command: bundle exec guard --no-bundler-warning --no-interactions
